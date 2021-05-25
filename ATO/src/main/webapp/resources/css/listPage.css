@@ -1,0 +1,111 @@
+@charset "UTF-8";
+:root{
+    --text-color: rgb(216, 132, 5);
+    --icon-color: rgba(56, 56, 56, 0.658);
+    --btn-color: rgb(187, 125, 33);
+    --btnBorderB-color: rgb(109, 88, 60);
+    --btnText-color: rgb(224, 224, 224);
+    --footerBackG-color: rgb(231, 198, 157);
+    --background-color: rgb(238, 237, 233);
+}
+:root.dark-theme {
+    --text-color: rgb(224, 224, 224);
+    --icon-color:rgb(224, 224, 224);
+    --btn-color: rgb(163, 98, 0);
+    --btnBorderB-color: rgb(68, 48, 30);
+    --btnText-color: rgb(235, 225, 225);
+    --footerBackG-color: rgb(170, 142, 107);
+    --background-color: rgb(53, 51, 51);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: rgb(224, 224, 224);
+        --icon-color:rgb(224, 224, 224);
+        --btn-color: rgb(163, 98, 0);
+        --btnBorderB-color: rgb(68, 48, 30);
+        --btnText-color: rgb(235, 225, 225);
+        --footerBackG-color: rgb(170, 142, 107);
+        --background-color: rgb(53, 51, 51);
+    }
+    :root.light-theme {
+        --text-color: rgb(216, 132, 5);
+        --icon-color: rgba(56, 56, 56, 0.658);
+        --btn-color: rgb(187, 125, 33);
+        --btnBorderB-color: rgb(109, 88, 60);
+        --btnText-color: rgb(224, 224, 224);
+        --footerBackG-color: rgb(231, 198, 157);
+        --background-color: white;
+    }
+}
+#write {
+	text-align: right;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+#write a {
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 15px;
+	border: 2px solid var(--icon-color);
+	cursor: pointer;
+	color: var(--text-color);
+	border-color: var(--text-color);
+}
+#write a:hover {
+	color: var(--background-color);
+	background-color: var(--text-color);
+}
+.table {
+	width: 700px;
+	border-collapse: collapse;
+}
+.table th {
+	border-spacing: 0px;
+	padding: 15px 0px;
+	font-weight: bold;
+	font-size: 18px;
+	color: var(--btn-color);
+	border-bottom: 2px solid var(--btn-color);
+}
+.table td {
+	height: 40px;
+	font-size: 18px;
+}
+.table td a {
+	text-decoration: none;
+	color: var(--icon-color);
+}
+#id {
+	width: 40px;
+	text-align: center;
+}
+#title {
+	width: 200px;
+}
+#regDate {
+	width: 100px;
+	text-align: center;
+}
+#writer {
+	width: 100px;
+	text-align: center;
+}
+#viewCnt {
+	width: 40px;
+	text-align: center;
+}
+.pageNum {
+	margin-top: 30px;
+	text-align: center;
+}
+.pageNum a {
+	font-size: 20px;
+	text-decoration: none;
+	color: var(--icon-color);
+	margin: 15px;
+}
+.pageNum #selectPage {
+	color: var(--text-color);
+	font-weight: bold;
+}

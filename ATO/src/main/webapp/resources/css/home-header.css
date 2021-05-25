@@ -1,0 +1,107 @@
+@charset "UTF-8";
+:root{
+    --text-color: #d88405;
+    --icon-color: #383838a8;
+    --btn-color: #bb7d21;
+    --btnBorderB-color: #6d583c;
+    --btnText-color: #e0e0e0;
+    --footerBackG-color: rgb(231, 198, 157);
+    --background-color: rgb(238, 237, 233);
+}
+:root.dark-theme {
+    --text-color: rgb(224, 224, 224);
+    --icon-color:rgb(224, 224, 224);
+    --btn-color: rgb(163, 98, 0);
+    --btnBorderB-color: rgb(68, 48, 30);
+    --btnText-color: rgb(235, 225, 225);
+    --footerBackG-color: rgb(170, 142, 107);
+    --background-color: rgb(53, 51, 51);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: rgb(224, 224, 224);
+        --icon-color:rgb(224, 224, 224);
+        --btn-color: rgb(163, 98, 0);
+        --btnBorderB-color: rgb(68, 48, 30);
+        --btnText-color: rgb(235, 225, 225);
+        --footerBackG-color: rgb(170, 142, 107);
+        --background-color: rgb(53, 51, 51);
+    }
+    :root.light-theme {
+        --text-color: rgb(216, 132, 5);
+        --icon-color: rgba(56, 56, 56, 0.658);
+        --btn-color: rgb(187, 125, 33);
+        --btnBorderB-color: rgb(109, 88, 60);
+        --btnText-color: rgb(224, 224, 224);
+        --footerBackG-color: rgb(231, 198, 157);
+        --background-color: white;
+    }
+}
+
+/* Header */
+.header{
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid var(--text-color);
+}
+header{
+	position: relative;
+    padding: 8px;
+    margin: 0px;
+    justify-content: space-between;
+    display: flex;
+    align-items: baseline;
+    min-width: 750px;
+}
+    /* Hembuger Button Toggle */
+#list {
+    margin: 0;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s linear;
+}
+a:focus+#list {
+    max-height: 15em;
+}
+a[href="nowhere"]:focus {
+    pointer-events: none;
+}
+.navbarMenu {
+    list-style: none;
+    padding-left: 0;
+}
+.navbarMenu li {
+    display: flex;
+    padding: 8px 12px;
+}
+/* .navbarMenu li:hover {
+    background-color: rgb(201, 193, 185);
+    border-radius: 10px;
+    font-size: 15px;
+} */
+.navbarMenu a {
+    text-decoration: none;
+    color: var(--icon-color);
+}
+.headerToggle {
+    padding: 15px;
+    font-size: 24px;
+    color: var(--icon-color);
+}
+.log_sign {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.log_sign i{
+    padding: 8px 12px;
+    color: var(--icon-color);
+    font-size: 18px;
+}
+.log_sign a{
+    text-decoration: none;
+    padding: 8px 12px;
+    color: var(--icon-color);
+}
+    /* Header */

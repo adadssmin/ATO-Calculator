@@ -1,0 +1,90 @@
+@charset "UTF-8";
+:root{
+    --text-color: #d88405;
+    --icon-color: #383838a8;
+    --btn-color: #bb7d21;
+    --btnBorderB-color: #6d583c;
+    --btnText-color: #e0e0e0;
+    --footerBackG-color: rgb(231, 198, 157);
+    --background-color: rgb(238, 237, 233);
+}
+:root.dark-theme {
+    --text-color: rgb(224, 224, 224);
+    --icon-color:rgb(224, 224, 224);
+    --btn-color: rgb(163, 98, 0);
+    --btnBorderB-color: rgb(68, 48, 30);
+    --btnText-color: rgb(235, 225, 225);
+    --footerBackG-color: rgb(170, 142, 107);
+    --background-color: rgb(53, 51, 51);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: rgb(224, 224, 224);
+        --icon-color:rgb(224, 224, 224);
+        --btn-color: rgb(163, 98, 0);
+        --btnBorderB-color: rgb(68, 48, 30);
+        --btnText-color: rgb(235, 225, 225);
+        --footerBackG-color: rgb(170, 142, 107);
+        --background-color: rgb(53, 51, 51);
+    }
+    :root.light-theme {
+        --text-color: rgb(216, 132, 5);
+        --icon-color: rgba(56, 56, 56, 0.658);
+        --btn-color: rgb(187, 125, 33);
+        --btnBorderB-color: rgb(109, 88, 60);
+        --btnText-color: rgb(224, 224, 224);
+        --footerBackG-color: rgb(231, 198, 157);
+        --background-color: white;
+    }
+}
+
+/* Footer */
+.footer{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+footer{
+	position: relative;
+   	height:70px;
+    padding: 10px 0;
+    bottom: 0;
+    min-width: 750px;
+    border-top: 1px solid var(--text-color);
+}
+.footerString{
+    text-align: center;
+    margin-top: 30px;
+}
+.footerli{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.footerli i{
+    color: var(--icon-color);
+    font-size: 20px;
+    padding: 8px 12px;
+}
+.night_day{
+    display:block;
+    height: 40px;
+    width: 80px;
+    background-color: var(--btn-color);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    transition: all 0.1s;
+    border-bottom: 4px solid var(--btnBorderB-color);
+    position: absolute;
+    color: var(--btnText-color);
+}
+.night_day:active{
+    transform: translateY(3px);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--btnBorderB-color);
+}
+    /* Footer */

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+:root{
+    --text-color: #d88405;
+    --icon-color: #383838a8;
+    --btn-color: #bb7d21;
+    --btnBorderB-color: #6d583c;
+    --btnText-color: #e0e0e0;
+    --footerBackG-color: rgb(231, 198, 157);
+    --background-color: rgb(238, 237, 233);
+}
+:root.dark-theme {
+    --text-color: rgb(224, 224, 224);
+    --icon-color:rgb(224, 224, 224);
+    --btn-color: rgb(163, 98, 0);
+    --btnBorderB-color: rgb(68, 48, 30);
+    --btnText-color: rgb(235, 225, 225);
+    --footerBackG-color: rgb(170, 142, 107);
+    --background-color: rgb(53, 51, 51);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: rgb(224, 224, 224);
+        --icon-color:rgb(224, 224, 224);
+        --btn-color: rgb(163, 98, 0);
+        --btnBorderB-color: rgb(68, 48, 30);
+        --btnText-color: rgb(235, 225, 225);
+        --footerBackG-color: rgb(170, 142, 107);
+        --background-color: rgb(53, 51, 51);
+    }
+    :root.light-theme {
+        --text-color: rgb(216, 132, 5);
+        --icon-color: rgba(56, 56, 56, 0.658);
+        --btn-color: rgb(187, 125, 33);
+        --btnBorderB-color: rgb(109, 88, 60);
+        --btnText-color: rgb(224, 224, 224);
+        --footerBackG-color: rgb(231, 198, 157);
+        --background-color: white;
+    }
+}
+body{
+	font-family: 'KoHo', sans-serif;
+	font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0px;
+    min-width: 750px;
+    min-height: 1240px;
+    width:100%;
+    height: 1240px;
+    background-color: var(--background-color);
+}
+    /* Main */
+main{
+	position: relative;
+    margin: 0 auto;
+    width: 1130px;
+    height: 700px;
+    padding: 50px 0px 50px
+}
+#info_form{
+	width: 510px;
+	margin: 0 auto;
+}
+#info_form h1{
+	height: 60px;
+}
+#userData {
+	width: 500px;
+    list-style: none;
+    padding: 8px 0px;
+    font-size: 18px;
+    color: var(--icon-color);
+}
+.signIn_box input{
+	width: 500px;
+    list-style: none;
+    padding: 8px 0px;
+}
+.form-group{
+	width: 510px;
+}
+.form-control{
+	height: 17px;
+	font-size: 18px;
+	margin: 0 auto;
+	width: 504px;
+    padding: 8px 0px;
+}
+.info_box button{
+	font-size: 20px;
+    padding: 10px 20px;
+    background: var(--btn-color);
+    color: var(--btnText-color);
+    border-style: none;
+    border-radius: 10px;
+    width: 510px;
+}
+.reg_button{
+	text-align: center;
+}
+    /* Main */
