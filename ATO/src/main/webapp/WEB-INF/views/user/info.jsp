@@ -18,7 +18,7 @@
 	<!-- main -->
 	<main>
 		<div id="info_form">
-		<h1>정보수정</h1>
+		<h1>회원정보</h1>
 			<form action="${ pageContext.request.contextPath }/user/info" method="post">
 				<div class="info_box">
 					<div class="form-group">

@@ -108,6 +108,10 @@ public class BoardController {
 		boolean prev = startPageNum == 1 ? false : true;
 		boolean next = endPageNum * pageNum_cnt >= count ? false : true;
 		
+		//총 개수 및 페이지당 출력되는 게시물 수
+		model.addAttribute("totalCount", count);
+		model.addAttribute("postNum", postNum);
+		
 		//시작, 끝 번호
 		model.addAttribute("startPageNum", startPageNum);
 		model.addAttribute("endPageNum", endPageNum);

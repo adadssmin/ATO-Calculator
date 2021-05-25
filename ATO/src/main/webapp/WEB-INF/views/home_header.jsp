@@ -33,7 +33,7 @@
 			<c:if test="${ user != null }">
 				<ul class="log_sign">
 					<li><a><b>${ user.id }님</b></a></li>
-					<li><a href="${ pageContext.request.contextPath }/user/info?id=${user.id}">정보수정</a></li>
+					<li><a href="${ pageContext.request.contextPath }/user/info?id=${user.id}">내 정보</a></li>
 					<li><a href="${ pageContext.request.contextPath }/user/logout">로그아웃</a></li>
 					<li><a href="${ pageContext.request.contextPath }"><i
 							class="fas fa-home"></i></a></li>

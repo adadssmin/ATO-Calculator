@@ -24,9 +24,9 @@
 				<tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${ boardList }" var="boardList">
+				<c:forEach varStatus="list" items="${ boardList }" var="boardList">
 					<tr>
-						<td id="id">${ boardList.id }</td>
+						<td>${ (totalCount - list.index) - ((select - 1) * postNum) }</td>
 						<td>
 							<c:if test="${ user.id == boardList.writer }">
 								<a href="${ pageContext.request.contextPath }/board/view_W?id=${boardList.id}">${boardList.title}</a>
