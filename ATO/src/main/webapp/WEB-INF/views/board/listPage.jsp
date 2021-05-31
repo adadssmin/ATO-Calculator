@@ -8,10 +8,12 @@
 <title>Board List</title>
 <link rel="stylesheet" href="<c:url value="/resources/css/listPage.css"/>"/>
 </head>
-<body>	
-	<div id="write">
-		<a id="write_a" href="${ pageContext.request.contextPath }/board/write">글 작성</a>
-	</div>
+<body>
+	<c:if test="${ user.id != null }">
+		<div id="write">
+			<a id="write_a" href="${ pageContext.request.contextPath }/board/write">글 작성</a>
+		</div>
+	</c:if>
 	<div class="tableH">
 		<table class="table">
 			<thead>

@@ -23,7 +23,7 @@
 				<li><a href=""><i class="fas fa-envelope"></i></a></li>
 			</ul>
 			<div class="footerString">
-				Coded by SUMm. There is more <a href="#">here</a>.
+				Coded by SUMm. There is more <a href="https://github.com/adadssmin/ATO-Calculator">here</a>.
 			</div>
 		</footer>
 	</div>
