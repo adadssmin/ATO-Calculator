@@ -19,7 +19,7 @@
 			<ul id="list" class="navbarMenu">
 				<li><a href="계산기.html">ATO-계산기</a></li>
 				<li><a href="사용법.html">계산기 사용법</a></li>
-				<li><a href="상식.html">아토피 상식</a></li>
+				<li><a href="<c:url value="/information/information"/>">아토피 상식</a></li>
 				<li><a href="<c:url value="/board/board"/>">게시판</a></li>
 			</ul>
 			<c:if test="${ user == null }">

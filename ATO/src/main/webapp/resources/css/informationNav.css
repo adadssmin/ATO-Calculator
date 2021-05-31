@@ -1,18 +1,20 @@
 @charset "UTF-8";
 .nav ul {
-	justify-content: flex-end;
 	display: flex;
-	font-weight: bold;
-	font-size: 14px;
-	margin: 10px 0px;
+	justify-content: space-around;
+	padding-left: 0px;
 }
 .nav li {
     padding: 8px 12px;
 	list-style: none;
 }
 .nav a {
+	display:inline-block;
+	width: 130px;
+	text-align: center;
 	text-decoration: none;
-	padding: 5px;
+	font-size: 20px;
+	padding: 10px;
 	border-radius: 15px;
 	border: 2px solid var(--icon-color);
 	cursor: pointer;

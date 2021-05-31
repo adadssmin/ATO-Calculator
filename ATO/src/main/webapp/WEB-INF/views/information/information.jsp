@@ -5,12 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시판</title>
+<title>아토피정보</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="<c:url value="/resources/css/board.css"/>"/>
+<link rel="stylesheet" href="<c:url value="/resources/css/information.css"/>"/>
 </head>
 <body>
-	
 	<!-- nav -->
 	<div class="container">
 		<%@ include file="../home_header.jsp"%>
@@ -19,18 +18,18 @@
 	<!-- main -->
 	<main>
 		<div class="main">
-		<h1>게시판</h1>
-			<c:if test="${ view == null and write == null and modify == null}">
-				<%@ include file="./listPage.jsp"%>
+		<h1>아토피 상식</h1>
+			<c:if test="${ information == null }">
+				<%@ include file="./overview.jsp"%>
 			</c:if>
-			<c:if test="${ write == 'write' }">
-				<%@ include file="./write.jsp"%>
+			<c:if test="${ information == 'cause' }">
+				<%@ include file="./cause.jsp"%>
 			</c:if>
-			<c:if test="${ view != null }">
-				<%@ include file="./view.jsp"%>
+			<c:if test="${ information == 'symptom' }">
+				<%@ include file="./symptom.jsp"%>
 			</c:if>
-			<c:if test="${ modify != null }">
-				<%@ include file="./modify.jsp"%>
+			<c:if test="${ information == 'care' }">
+				<%@ include file="./care.jsp"%>
 			</c:if>
 		</div>
 	</main>

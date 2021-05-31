@@ -9,7 +9,7 @@
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=KoHo&Nanum+Gothic&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&Nanum+Gothic&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<c:url value="/resources/css/home.css"/>"/>
 <title>ATO_Calculator</title>
 </head>
@@ -35,17 +35,14 @@
 			</div>
 		</div>
 		<div class="mainBtn">
-			<button class="btn1">
-				<a href="계산기.html">ATO-계산기</a>
+			<button class="Mbtn" onclick="location.href='#'">
+				ATO-계산기
 			</button>
-			<button class="btn2">
-				<a href="사용법.html">계산기 사용법</a>
+			<button class="Mbtn" onclick="location.href='<c:url value="/information/information"/>'">
+				아토피 상식
 			</button>
-			<button class="btn3">
-				<a href="상식.html">아토피 상식</a>
-			</button>
-			<button class="btn4">
-				<a href="<c:url value="/board/board"/>">게시판</a>
+			<button class="Mbtn" onclick="location.href='<c:url value="/board/board"/>'">
+				게시판
 			</button>
 		</div>
 	</main>
