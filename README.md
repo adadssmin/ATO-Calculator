@@ -5,12 +5,12 @@
 >20210525 Portforilo를 작성하기위해 github를 사용하였습니다.<br>
 
 <strong><홈></strong><br>
-<img src="https://user-images.githubusercontent.com/75426263/119753348-9ad89d00-bed9-11eb-9279-4f0c7b33bdd3.JPG" width="800">
+<img src="https://user-images.githubusercontent.com/75426263/120130664-b0afd000-c201-11eb-924f-da7b9e6cf0f4.JPG" width="800">
 <br>
 <br>
 <strong><로그인></strong>
 <br>
-<img src="https://user-images.githubusercontent.com/75426263/119754040-cdcf6080-beda-11eb-8330-8b5641ac9e00.JPG" width="800">
+<img src="https://user-images.githubusercontent.com/75426263/120130693-c2917300-c201-11eb-9524-9a49da10b408.JPG" width="800">
 <br>
 <br>
 <strong><회원가입></strong>
