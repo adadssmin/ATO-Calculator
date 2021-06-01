@@ -3,8 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>home-footer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 <link rel="stylesheet" href="<c:url value="/resources/css/footer.css"/>">
 </head>
 <body>
@@ -23,7 +22,8 @@
 				<li><a href=""><i class="fas fa-envelope"></i></a></li>
 			</ul>
 			<div class="footerString">
-				Coded by SUMm. There is more <a href="https://github.com/adadssmin/ATO-Calculator">here</a>.
+				아토피를 <strong>이겨내는 그날까지</strong> 모두가 힘내시길 바랍니다.<br>
+				Coded by <strong>SUMm</strong>. There is more <a href="https://github.com/adadssmin/ATO-Calculator">here</a>.<br>
 			</div>
 		</footer>
 	</div>

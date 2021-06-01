@@ -18,6 +18,7 @@
 }
 .title .writer {
 	font-size: 19px;
+	font-weight: normal;
 }
 .viewCnt {
 	float: right;
@@ -29,6 +30,7 @@
 }
 .content {
 	height: 280px;
+	font-weight: normal;
 }
 .content .view_form {
 	height: 280px;

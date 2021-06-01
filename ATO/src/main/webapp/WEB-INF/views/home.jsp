@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 <script src="https://kit.fontawesome.com/96499e4121.js"	crossorigin="anonymous"></script>
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -35,7 +35,7 @@
 			</div>
 		</div>
 		<div class="mainBtn">
-			<button class="Mbtn" onclick="location.href='#'">
+			<button class="Mbtn" onclick="location.href='<c:url value="/calculator/calculator"/>'">
 				ATO-계산기
 			</button>
 			<button class="Mbtn" onclick="location.href='<c:url value="/information/information"/>'">

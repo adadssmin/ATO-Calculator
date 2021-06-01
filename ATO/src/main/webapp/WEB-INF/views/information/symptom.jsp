@@ -9,5 +9,10 @@
 	<div>
 		<%@ include file="./nav.jsp"%>
 	</div>
+	<div class="content">
+		<p>
+			증상
+		</p>
+	</div>
 </body>
 </html>

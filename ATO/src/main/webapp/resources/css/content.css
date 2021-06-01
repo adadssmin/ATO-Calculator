@@ -6,3 +6,21 @@
 	color: var(--icon-color);
 	line-height: 200%;
 }
+table {
+	margin: 0 auto;
+}
+tr {
+	display: inline-block;
+	height: 250px;
+	width: 697px;
+}
+th {
+	display: flex;
+	font-size: 25px;
+}
+td {
+	margin: 10px 0px;
+	padding-left: 15px;
+	border: 2px solid var(--text-color);
+	display: flex;
+}

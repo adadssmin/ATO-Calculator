@@ -15,7 +15,8 @@ footer{
 }
 .footerString{
     text-align: center;
-    margin-top: 30px;
+    font-weight: normal;
+    font-size: 14px;
 }
 .footerli{
     display: flex;
