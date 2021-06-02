@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
   <link rel="stylesheet" href="<c:url value="/resources/css/calendar.css"/>">
 </head>
 <body>
-	<div class="calendar">
+	 <div class="calendar">
         <div class="header">
             <div class="year-month"></div>
             <div class="nav">
@@ -29,6 +30,6 @@
             <div class="dates"></div>
         </div>
     </div>
-    <script src="calendar.js"></script>
+    <script src="<c:url value="/resources/javascript/calendar.js"/>"></script>
 </body>
 </html>

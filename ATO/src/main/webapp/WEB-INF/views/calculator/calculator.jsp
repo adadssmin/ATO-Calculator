@@ -18,7 +18,7 @@
 	<main>
 		<div class="main">
 		<h1>ATO-Calculator</h1>
-			
+			<%@ include file="./calendar.jsp"%>
 		</div>
 	</main>
 	

@@ -13,6 +13,7 @@ header{
     display: flex;
     align-items: baseline;
     min-width: 750px;
+    width: 100%;
 }
     /* Hembuger Button Toggle */
 #list {
