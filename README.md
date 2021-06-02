@@ -61,3 +61,6 @@
 <br>
 <img src="https://user-images.githubusercontent.com/75426263/120212298-c1e1f680-c26c-11eb-9e58-dd9c1d7a27d0.JPG" width="800">
 <br>
+
+<br>
+> MySQL 스키마 및 테이블 적용(ato_db.sql)
