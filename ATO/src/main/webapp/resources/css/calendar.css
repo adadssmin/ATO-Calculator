@@ -122,12 +122,42 @@ main {
 	height: 95px;
 	border-bottom: 2px solid var(--text-color);
 	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #selectDate {
-	
+	margin: 0px 20px;
+}
+
+.plus {
+	text-decoration: none;
+	font-size: 30px;
+	margin: 0px 20px;
+	color: var(--icon-color);
 }
 
 .note_main {
 	height: 399px;
+}
+
+.slider {
+	width: 100%;
+	position: relative;
+}
+
+.slider_item {
+	width: 386px;
+	height: 300px;
+	position: absolute;
+	background-color: var(--background-color);
+	z-index: 0;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 1;
 }

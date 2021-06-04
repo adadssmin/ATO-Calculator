@@ -33,10 +33,25 @@
 		</div>
 		<div class="note">
 	    	<div class="note_header">
-    			<div id="selectDate"></div>
+    			<h1 id="selectDate"></h1>
+    			<div id="plusBtn"></div>
 	    	</div>
 	    	<div class="note_main">
-	    	
+    			<button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+                <p>날짜</p>
+		    			<div id="chkDate"></div>
+		    	<div id="slider">	
+		    		<div class="slider_item">
+		    			<h1>1</h1>
+		    		</div>
+		    		<div class="slider_item">
+		    			<h1>2</h1>
+		    		</div>
+		    		<div class="slider_item">
+		    			<h1>3</h1>
+		    		</div>
+		    	</div>
 	    	</div>
 		</div>
     </div>

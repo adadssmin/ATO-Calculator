@@ -18,7 +18,12 @@
 	<main>
 		<div class="main">
 		<h1>ATO-Calculator</h1>
-			<%@ include file="./calendar.jsp"%>
+			<c:if test="${ calculator == 'calculator' }">
+				<%@ include file="./calendar.jsp"%>
+			</c:if>
+			<c:if test="${ check == 'check' }">
+				<%@ include file="./check.jsp"%>
+			</c:if>
 		</div>
 	</main>
 	

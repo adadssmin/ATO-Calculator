@@ -48,16 +48,15 @@ const renderCalendar = () => {
 		const condition = i >= firstDateIndex && i < lastDateIndex + 1
                       ? 'this' : 'other';
 		if (condition == 'this') {
-			dates[i] = `<button class="date" value="${viewMonth + 1}월 ${date}일" onclick="dateClick(this.value)"><span class="${condition}">${date}</span></button>`;
+			dates[i] = `<button class="date" value="${viewMonth + 1}월 ${date}일" onclick="dateClick(this.value, ${viewMonth + 1}, ${date}, ${viewYear})"><span class="${condition}">${date}</span></button>`;
 		} else if (condition == 'other') {
 			if (date > 7) {
-				dates[i] = `<button class="date" value="${viewMonth}월 ${date}일" onclick="dateClick(this.value)"><span class="${condition}">${date}</span></button>`;	
+				dates[i] = `<button class="date" value="${viewMonth}월 ${date}일" onclick="dateClick(this.value, ${viewMonth}, ${date}, ${viewYear})"><span class="${condition}">${date}</span></button>`;	
 			} else {
-				dates[i] = `<button class="date" value="${viewMonth + 2}월 ${date}일" onclick="dateClick(this.value)"><span class="${condition}">${date}</span></button>`;
+				dates[i] = `<button class="date" value="${viewMonth + 2}월 ${date}일" onclick="dateClick(this.value, ${viewMonth + 2}, ${date}, ${viewYear})"><span class="${condition}">${date}</span></button>`;
 			}
 		}
 	});
-	
 	document.querySelector('.dates').innerHTML = dates.join('');
 	
 	const today = new Date();
@@ -65,18 +64,24 @@ const renderCalendar = () => {
 		for (let dates of document.querySelectorAll('.date')) {
 			if (+dates.innerText === today.getDate()) {
 				dates.classList.add('today');
+				dateClick(viewMonth + 1 + "월 " + today.getDate() + "일", viewMonth + 1, today.getDate(), viewYear);
 				break;
 			}
 		}
 	}
 };
 
-function dateClick(value) {
+function dateClick(value, month, date, year) {
+	if (value != null) {
+		document.getElementById("plusBtn").innerHTML = `<a class="plus" href="check?month=${month}&date=${date}">+</a>`;
+	} else {
+		document.getElementById("plusBtn").innerHTML = ``;
+	}
 	document.getElementById("selectDate").textContent = value;
+	document.getElementById("chkDate").textContent = year + "년 " + value;
 }
 
 renderCalendar();
-
 
 const prevMonth = () => {
 	date.setMonth(date.getMonth() - 1);
@@ -92,3 +97,22 @@ const goToday = () => {
 	date = new Date();
 	renderCalendar();
 }
+
+const SHOWING_CLASS = "showing";
+const firstSlide = document.querySelector(".slider_item:first-child");
+function slide() {
+	const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+	if (currentSlide) {
+		currentSlide.classList.remove(SHOWING_CLASS);
+		const nextSlide = currentSlide.nextElementSibling;
+		if (nextSlide) {
+			nextSlide.classList.add(SHOWING_CLASS);
+		} else {
+			firstSlide.classList.add(SHOWING_CLASS);
+		}
+	} else {
+		firstSlide.classList.add(SHOWING_CLASS);
+	}
+}
+slide();
+/*setInterval(slide, 2000);*/
