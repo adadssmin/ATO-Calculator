@@ -5,7 +5,7 @@
 >20210525 Portforilo를 작성하기위해 github를 사용하였습니다.<br>
 
 <strong><홈></strong><br>
-<img src="https://user-images.githubusercontent.com/75426263/120130834-17cd8480-c202-11eb-8b16-fdf9f90195a8.JPG" width="800">
+<img src="https://user-images.githubusercontent.com/75426263/120726923-4013f680-c514-11eb-91ff-73c8fc63dc57.JPG" width="800">
 <br>
 <br>
 <strong><로그인></strong>
